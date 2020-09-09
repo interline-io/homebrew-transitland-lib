@@ -1,17 +1,17 @@
-# homebrew-gotransit
+# homebrew-transitland-lib
 
-Formulas for installing [Gotransit](https://github.com/interline-io/gotransit) using the [Homebrew](https://brew.sh/) package manager on macOS.
+Formulas for installing [transitland-lib](https://github.com/interline-io/transitland-lib) using the [Homebrew](https://brew.sh/) package manager on macOS.
 
 ## Installation
 
-To install the Gotransit binary for CLI use:
+To install the transitland-lib binary for CLI use:
 
 ```sh
-brew install interline-io/gotransit/gotransit
+brew install interline-io/transitland-lib/transitland-lib
 ```
 
-Want to use Gotransit as a library within another Go-based project? See the Gotransit readme for more information on [how to use it as a library](https://github.com/interline-io/gotransit#usage-as-a-library).
+Want to use transitland-lib as a library within another Go-based project? See the transitland-lib readme for more information on [how to use it as a library](https://github.com/interline-io/transitland-lib#usage-as-a-library).
 
 ## Usage
 
-See the Gotransit readme for [CLI usage instructions](https://github.com/interline-io/gotransit#usage-as-a-cli-tool).
+See the transitland-lib readme for [CLI usage instructions](https://github.com/interline-io/transitland-lib#usage-as-a-cli-tool).
