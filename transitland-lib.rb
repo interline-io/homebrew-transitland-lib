@@ -15,6 +15,6 @@ class TransitlandLib < Formula
   end
 
   def install
-    bin.install "transitland"
+    bin.install 'transitland-macos' => 'transitland'
   end
 end
