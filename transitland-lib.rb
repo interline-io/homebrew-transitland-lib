@@ -1,7 +1,7 @@
 class TransitlandLib < Formula
   desc "Library and tool for reading, writing, and processing transit data"
   homepage "https://github.com/interline-io/transitland-lib"
-  version "v0.6.1-rc5"
+  version "v0.6.1"
   bottle :unneeded
 
   if OS.mac?
