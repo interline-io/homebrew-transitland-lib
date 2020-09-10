@@ -5,7 +5,7 @@ class TransitlandLib < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos"
+    url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos.zip"
     sha256 "36dc20c87ec0bc6a6703a246576ef9e29132fa3feb09d5f37180ac9150adc91d"
   elsif OS.linux?
     if Hardware::CPU.intel?
