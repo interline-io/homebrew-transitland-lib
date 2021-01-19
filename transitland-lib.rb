@@ -1,16 +1,16 @@
 class TransitlandLib < Formula
   desc "Library and tool for reading, writing, and processing transit data"
   homepage "https://github.com/interline-io/transitland-lib"
-  version "v0.6.1"
+  version "v0.7.1"
   bottle :unneeded
 
   if OS.mac?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos.zip"
-    sha256 "fddff9f1f65df33c65e0f9fbc4a2199e130729ea3f3931a0ff912a55128b9264"
+    sha256 "b15b86873fd067390f7062f172e6108c88a848c9d8a6c5e29f64de3f976a16c8"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-linux"
-      sha256 "ce99c64104e4aad0374aa1edf0ebe9607cbc330d5838a1a3933ba12c6777a1af"
+      sha256 "072564c2ba313292f1dc98c2bdb9d480c859c647b2f3718a00252bf58fec74f8"
     end
   end
 
