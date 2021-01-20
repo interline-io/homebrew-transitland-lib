@@ -6,11 +6,11 @@ class TransitlandLib < Formula
 
   if OS.mac?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos.zip"
-    sha256 "b15b86873fd067390f7062f172e6108c88a848c9d8a6c5e29f64de3f976a16c8"
+    sha256 "7de930fca5894554d987a2a9b21853fa4f1916107b1428c9d30dc4e93a87b81a"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-linux"
-      sha256 "072564c2ba313292f1dc98c2bdb9d480c859c647b2f3718a00252bf58fec74f8"
+      sha256 "20f39331a634a219be019234e5882d02d45fff7b2d963cfa0a8b2a1e52e2a772"
     end
   end
 
