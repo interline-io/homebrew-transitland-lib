@@ -1,10 +1,10 @@
 class TransitlandLib < Formula
   desc "Library and tool for reading, writing, and processing transit data"
   homepage "https://github.com/interline-io/transitland-lib"
-  version "v0.8.6"
+  version "v0.8.7"
 
   url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos.zip"
-  sha256 "285103e01affa74e20423be5ab5dd9801d3910ed077e2e89ae4448668878ff52"
+  sha256 "2c38a828f7988106e554749dca2c2cd79bcd24eec480b1246c64c32dd46542b8"
 
   def install
     bin.install 'transitland'
