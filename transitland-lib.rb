@@ -1,17 +1,17 @@
 class TransitlandLib < Formula
   desc "Library and tool for reading, writing, and processing transit data"
   homepage "https://github.com/interline-io/transitland-lib"
-  version "v0.14.0"
+  version "v0.16.2"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos-intel.zip"
-    sha256 "cad19700c3ca32f6d6ba427990648d0a49ba6f937a1f27e7221a0f6f9e504c93"
+    sha256 "2eda00e322c9868ef000cad9e5a9fe00c5a044347e24acc377f8e8de43c9f8cb"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos-apple.zip"
-    sha256 "f921d942ad4b5f6e0fc2d00a5774ff443e2b739956f837af9b349f7a07b31fb6"
+    sha256 "f0f6a3fed1dfcf92f661b55a5d69848b4d90fcdef2737c5769fef8686ced7c95"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-linux"
-    sha256 "7cedb222dbc3071f276848a1f1cf0cdcfa92d4b7c35bd5abff5751065fe2e8de"
+    sha256 "0216f8958d2fe96f3a5b03baa26f3f791e8711588a8a7c7235062e869e7fc1f3"
   end
 
   def install
