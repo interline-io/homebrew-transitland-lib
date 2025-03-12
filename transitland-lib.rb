@@ -1,7 +1,18 @@
 class TransitlandLib < Formula
-  desc "Library and tool for reading, writing, and processing transit data"
+  desc "Library and CLI tool for reading, writing, and processing GTFS transit data"
   homepage "https://github.com/interline-io/transitland-lib"
   version "v1.0.0-rc4"
+  license "GPL-3.0-or-later"
+
+  livecheck do
+    url :stable
+    strategy :github_releases
+    regex(/^v?(\d+\.\d+\.\d+(?:-rc\d+)?)$/i)
+  end
+
+  head do
+    url "https://github.com/interline-io/transitland-lib.git", branch: "main"
+  end
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos-intel.zip"
@@ -16,5 +27,13 @@ class TransitlandLib < Formula
 
   def install
     bin.install 'transitland'
+  end
+
+  test do
+    version_output = shell_output("#{bin}/transitland version")
+    assert_match "transitland-lib version: #{version}", version_output
+    assert_match %r{transitland-lib commit: https://github\.com/interline-io/transitland-lib/commit/[a-f0-9]{40}}, version_output
+    assert_match "GTFS specification version: https://github.com/google/transit/", version_output
+    assert_match "GTFS Realtime specification version: https://github.com/google/transit/", version_output
   end
 end
