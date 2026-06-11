@@ -10,6 +10,18 @@ To install the transitland-lib binary for CLI use:
 brew install interline-io/transitland-lib/transitland-lib
 ```
 
+### Tap trust (Homebrew 6 and later)
+
+Homebrew 6.0.0 introduced [tap trust](https://docs.brew.sh/Tap-Trust): code from third-party taps like this one must be trusted before it runs. The fully-qualified install command above automatically trusts just the `transitland-lib` formula, so it works as-is (you may see a one-time warning).
+
+If you prefer to tap first, or want to trust the whole tap:
+
+```sh
+brew tap interline-io/transitland-lib
+brew trust interline-io/transitland-lib
+brew install transitland-lib
+```
+
 Want to use transitland-lib as a library within another Go-based project? See the transitland-lib readme for more information on [how to use it as a library](https://github.com/interline-io/transitland-lib#usage-as-a-library).
 
 ## Usage
