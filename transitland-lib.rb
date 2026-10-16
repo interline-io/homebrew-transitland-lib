@@ -1,7 +1,7 @@
 class TransitlandLib < Formula
   desc "Library and CLI tool for reading, writing, and processing GTFS transit data"
   homepage "https://github.com/interline-io/transitland-lib"
-  version "v1.3.4"
+  version "v1.4.0"
   license "GPL-3.0-or-later"
 
   livecheck do
@@ -16,13 +16,13 @@ class TransitlandLib < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos-intel"
-    sha256 "0f1fa6acbe703ba87d4da4dcf6779de3405ef1add3abffd20be35c2b16ec161d" # macOS Intel
+    sha256 "fac927b9c39e8a42170e7df432cc21fb3067bd2a6875353d5015e6bccb966c71" # macOS Intel
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-macos-apple"
-    sha256 "c8da1716051b3a56bc475c75ee6fc0a5dbd385d7fe917ac278b2b7903d421c32" # macOS Apple
+    sha256 "e496b98b1ca8adc7e88ce9bed708f35e269692918f8e53e44a555c7106b0611b" # macOS Apple
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/interline-io/transitland-lib/releases/download/#{version}/transitland-linux"
-    sha256 "1fe5aacc9e438404a43b31bfa36fdf8b22e6d747932fa6e43200627a444a528f" # Linux
+    sha256 "38e5845b5657c8a9df0fa95a77c646a58eb84a452ba4b4e9aff4fb9d4dec43d4" # Linux
   end
 
   def install
